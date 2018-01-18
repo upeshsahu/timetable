@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/card"
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginTop="4dp"
+    >
+
+
+
+        <EditText
+            android:layout_marginRight="5dp"
+            android:focusable="false"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/date"
+
+
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Enter date"
+
+            />
+        <EditText
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+
+            android:layout_marginTop="10dp"
+            android:hint="Enter Time "
+            android:layout_below="@+id/date"
+            android:id="@+id/time"
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+
+
+
+
+
+        <EditText
+
+            android:layout_marginTop="10dp"
+            android:id="@+id/txtsub"
+            android:layout_below="@id/time"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:ems="10"
+
+            android:text=""
+            android:inputType="textAutoCorrect|textCapWords"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:hint="Enter Subject"/>
+
+
+
+
+
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/editText"
+
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:ems="10"
+        android:layout_below="@+id/txtsub"
+
+        android:text=""
+        android:inputType="textAutoCorrect|textCapWords"
+
+        android:gravity="left"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:hint="Add Project detail"/>
+
+    <Button
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/btn_add"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/button"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+         android:layout_below="@id/editText"
+        android:text="add memo" />
+
+
+    </RelativeLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Time table</string>
+
+    <!-- TODO: Remove or change this placeholder text-->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_tabbed">Tabbed</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_update">Edit</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_tab">TabActivity</string>
+    <string-array name="items_list">
+        <item name="App Info">Add Memo</item>
+        <item name="Share">Monday</item>
+        <item name="Developers">Tuesady</item>
+    </string-array>
+    <string name="title_activity_share">Share</string>
+</resources>

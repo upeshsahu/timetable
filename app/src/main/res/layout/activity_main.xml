@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.upesh.timetable.MainActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+
+        <LinearLayout
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtclass"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="35sp"
+                android:text="CURRENT CLASS"
+                android:layout_marginTop="15dp"
+                android:gravity="center"/>
+
+
+
+
+            <LinearLayout
+                android:background="#039BE5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:id="@+id/linearLayout">
+
+                <TextView
+                    android:id="@+id/textsub"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="44sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:shadowColor="#ffffff"
+                    android:shadowDx="3"
+                    android:shadowDy="3"
+                    android:shadowRadius="2"/>
+            <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/texttime"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:gravity="center"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:shadowColor="#ffffff"
+                    android:shadowDx="3"
+                    android:shadowDy="3"
+                    android:shadowRadius="2"/>
+
+                <TextView
+                    android:id="@+id/textname"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:gravity="center"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:shadowColor="#ffffff"
+                    android:shadowDx="3"
+                    android:shadowDy="3"
+                    android:shadowRadius="2"/></LinearLayout>
+              </LinearLayout>
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="370dp"
+                android:layout_marginTop="10dp"
+               android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:fillViewport="true">
+
+                <TableLayout
+                    android:background="#039BE5"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp">
+                            <Button
+                                android:id="@+id/addclass"
+                            android:background="@drawable/ic_add_black2"
+                                android:text="Add class"
+                                android:gravity="bottom|center"
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                               />
+
+
+                            <Button
+                                android:id="@+id/btnedit"
+                                android:background="@drawable/ic_mode_edit_2"
+                                android:text="Update class"
+                                android:gravity="bottom|center"
+
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                />
+
+                            <Button
+                                android:id="@+id/button4"
+                                android:background="@drawable/ic_list2"
+                                android:text="SCHEDULE"
+                                android:gravity="bottom|center"
+                                android:layout_width="110dp"
+                                android:layout_height="110dp" />
+                        </LinearLayout>
+                    </TableRow>
+                    <TableRow
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content" >
+                        <LinearLayout android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp">
+
+                            <Button
+                                android:id="@+id/showday"
+                                android:background="@drawable/ic_schedule_2"
+                                android:text=" DAY"
+                                android:gravity="bottom|center"
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                />
+
+                            <Button
+                                android:id="@+id/button11"
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+
+                                android:background="@drawable/ic_assignment_2"
+                                android:gravity="bottom|center"
+                                android:text="see assignmanet" />
+
+                            <Button
+
+                                android:id="@+id/btnnotify"
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:background="@drawable/ic_notifications_2"
+                                android:text="notification"
+                                android:gravity="bottom|center"/>
+                        </LinearLayout>
+                    </TableRow>
+                    <TableRow
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+                        <LinearLayout android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp">
+                            <Button
+
+                                android:id="@+id/btndel"
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:background="@drawable/delete"
+                                android:text="Delete class"
+                                android:gravity="bottom|center"
+                                />
+                            <Button
+
+                                android:id="@+id/btnshare"
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:text="share"
+                                android:gravity="bottom|center"
+                                android:background="@drawable/ic_share_"/>
+                            <Button
+
+                                android:id="@+id/btndelmemo"
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:background="@drawable/ic_delete_memo"
+                                android:text="delete assign"
+                                android:gravity="bottom|center"/>
+                        </LinearLayout>
+                    </TableRow>
+                    <TableRow
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp">
+
+                            <Button
+                                android:id="@+id/button6"
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:background="@drawable/ic_note_add_2"
+                                android:text="add assignment"
+                                android:gravity="bottom|center"
+
+                                />
+                            <Button
+                                android:id="@+id/updatememo"
+                                android:background="@drawable/ic_view_day"
+                                android:text="edit memo"
+                                android:gravity="bottom|center"
+
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                />
+
+                            <Button
+                                android:id="@+id/button55"
+                                android:background="@drawable/ic_list2"
+                                android:text="SCHEDULE"
+                                android:gravity="bottom|center"
+                                android:layout_width="110dp"
+                                android:layout_height="110dp" />
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp">
+                            <Button
+                                android:id="@+id/button5"
+                                android:background="@drawable/ic_add_black2"
+                                android:text="SCHEDULE"
+                                android:gravity="bottom|center"
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                />
+
+
+                            <Button
+                                android:id="@+id/showday2"
+                                android:background="@drawable/ic_view_day"
+                                android:text="edit"
+                                android:gravity="bottom|center"
+
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                />
+
+                            <Button
+                                android:id="@+id/button552"
+                                android:background="@drawable/ic_list2"
+                                android:text="SCHEDULE"
+                                android:gravity="bottom|center"
+                                android:layout_width="110dp"
+                                android:layout_height="110dp" />
+                        </LinearLayout>
+                    </TableRow>
+
+                </TableLayout>
+
+            </ScrollView>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+    android:layout_width="250dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_gravity="start">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:srcCompat="@mipmap/app" />
+
+    <ListView
+        android:layout_below="@+id/imageView2"
+        android:id="@+id/left_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="#FFFFFF"
+        android:choiceMode="singleChoice"
+
+
+        >
+
+    </ListView>
+</LinearLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

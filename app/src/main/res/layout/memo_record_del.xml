@@ -1,0 +1,92 @@
+<android.support.v7.widget.CardView
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorAccent"
+    android:elevation="4dp"
+    app:cardBackgroundColor="@color/card">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/del"
+            android:background="@drawable/ic_delete"/>
+        <TextView
+            android:id="@+id/txttime"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="45dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Assignment"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/txtproj"
+            android:textSize="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtdate"
+            android:text="date"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/txtproj"
+            android:layout_marginTop="15dp"
+            android:textColor="#ffffff"
+
+            android:layout_marginBottom="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtsub"
+            android:text="subject"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/txtproj"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="10dp"/>
+
+
+
+
+        <TextView
+            android:id="@+id/txtdata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="55dp"
+            android:layout_below="@id/txtproj"
+            android:textSize="15dp"
+            android:background="#ffffff"
+            android:gravity="left"
+            android:text=""
+
+            />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
